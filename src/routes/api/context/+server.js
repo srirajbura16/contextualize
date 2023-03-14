@@ -21,9 +21,9 @@ export async function POST({ request }) {
     },
     body: JSON.stringify({
       model: "text-davinci-003",
-      prompt: `${text} \n\n Write 100 words based on the context on ${title}`,
+      prompt: `${text} \n\n Write 500 a word blog post based on the context on ${title}`,
       temperature: 0.2,
-      max_tokens: 140,
+      max_tokens: 2000,
       frequency_penalty: 1.0,
       presence_penalty: 1.0,
     }),
