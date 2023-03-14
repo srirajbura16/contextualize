@@ -35,7 +35,7 @@
     Contextilize
   </h1> -->
 
-  <form on:submit|preventDefault={handleSubmit} class="">
+  <form on:submit|preventDefault={handleSubmit} >
       <div class="mb-6">
         <input name="url" placeholder="Enter URL" type="url"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
       </div>
