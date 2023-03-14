@@ -6,7 +6,7 @@
   
   async function handleSubmit(event){
     state.loading = true
-    const data = await fetch("/api/extract-text", {
+    const data = await fetch("/api/context", {
       method: 'POST',
       body: JSON.stringify({url: event.target.url.value}),
       headers: {
