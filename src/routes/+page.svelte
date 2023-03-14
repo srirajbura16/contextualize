@@ -1,7 +1,4 @@
-
-
 <script>
-  let url = ''
   let articleTitle = ''
   let articleContext = ''
 
@@ -17,9 +14,7 @@
       }
     })
     
-    const {context, title, text} = await data.json()
-    console.log(context, title, text, "BROWSER")
-    url = event.target.url.value
+    const {context, title} = await data.json()
     articleTitle = title
     articleContext = context
 
@@ -31,9 +26,6 @@
 </script>
 
 <div class="mt-8 lg:w-3/5 md:w-4/5 p-4 w-full mx-auto">
-  <!-- <h1 class="text-3xl font-semibold">
-    Contextilize
-  </h1> -->
 
   <form on:submit|preventDefault={handleSubmit} >
       <div class="mb-6">
@@ -53,12 +45,7 @@
   </form>
   
   
-<!--   
-  
-  <p>{url}</p> -->
-
   <div class="mt-4">
-
     <h3 class="text-3xl font-semibold">
       {articleTitle}
     </h3>
