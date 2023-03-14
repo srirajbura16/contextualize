@@ -3,7 +3,6 @@
 <script>
   let url = ''
   let articleTitle = ''
-  let articleText = ''
   let articleContext = ''
 
   let state = { loading: false };
@@ -22,7 +21,6 @@
     console.log(context, title, text, "BROWSER")
     url = event.target.url.value
     articleTitle = title
-    articleText = text
     articleContext = context
 
     state.loading = false
@@ -67,9 +65,6 @@
     
     <div class="flex flex-col w-full border-opacity-50">
       <div class="mv-4 grid h-20 card bg-base-300 rounded-box place-items-center">{articleContext}</div>
-      <hr>
-
-      <div class="grid h-20 card bg-base-300 rounded-box place-items-center">{articleText}</div>
     </div>
   </div>
   

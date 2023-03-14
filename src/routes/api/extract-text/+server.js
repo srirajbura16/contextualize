@@ -35,7 +35,6 @@ export async function POST({ request }) {
   const finalData = {
     context: response.choices[0].text,
     title: title,
-    text: text,
   };
 
   console.log(finalData.context);
